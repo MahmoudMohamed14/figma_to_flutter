@@ -22,12 +22,34 @@ class MyProvider extends ChangeNotifier{
     TeacherModel('assets/tmath.png','MR. Ahmed Ali','4,500 EGP','English subject'),
 
   ];
+  Map<int,int>selectTeacherIndex={};
   void selectSubject(index){
     subjectModels[index].isSelected=!subjectModels[index].isSelected;
     notifyListeners();
   }
   void selectTeacher(index){
     teacherModels[index].isSelected=!teacherModels[index].isSelected;
+    indexSelectTeacher(index);
+    notifyListeners();
+
+  }
+  void indexSelectTeacher(index){
+    if(teacherModels[index].isSelected){
+if(selectTeacherIndex.isNotEmpty){
+  selectTeacherIndex[index] =  selectTeacherIndex.values.toList().last+1;
+
+}else{
+  selectTeacherIndex[index] =  1;
+}
+    }else{
+      selectTeacherIndex.forEach((key, value) {
+        if(selectTeacherIndex[index]! < value){
+          selectTeacherIndex[key]=value-1;
+        }
+      });
+      selectTeacherIndex.remove(index);
+
+    }
     notifyListeners();
   }
 

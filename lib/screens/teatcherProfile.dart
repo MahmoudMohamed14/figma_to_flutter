@@ -159,8 +159,8 @@ class TeacherProfile extends StatelessWidget {
         child: Container(
           padding:const EdgeInsets.all(8.0).w ,
 
-          width: 200,
-          height: 400,
+          width: 200.w,
+          height: 400.h,
           decoration: ShapeDecoration(
             color:MyColors.grey,
             shape: RoundedRectangleBorder(
@@ -239,14 +239,14 @@ class TeacherProfile extends StatelessWidget {
                   height: 32,
                   padding: const EdgeInsets.all(10),
                   decoration: ShapeDecoration(
-                    color: Color(0xFF03751C),
+                    color: MyColors.green,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
                   child: Center(
                     child: Text(
-                      '2',
+                      '${Provider.of<MyProvider>(context).selectTeacherIndex[index]}',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.white,
