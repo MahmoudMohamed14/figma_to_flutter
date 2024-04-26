@@ -1,0 +1,10 @@
+<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="teenyicons:appointments-outline" clip-path="url(#clip0_1_448)">
+<path id="Vector" d="M3.5 0.5V5.5M11.5 0.5V5.5M3 8H6M12 8H9M3 11H6M9 11H12M1.5 3H13.5C13.7652 3 14.0196 3.10536 14.2071 3.29289C14.3946 3.48043 14.5 3.73478 14.5 4V14C14.5 14.2652 14.3946 14.5196 14.2071 14.7071C14.0196 14.8946 13.7652 15 13.5 15H1.5C1.23478 15 0.98043 14.8946 0.792893 14.7071C0.605357 14.5196 0.5 14.2652 0.5 14V4C0.5 3.73478 0.605357 3.48043 0.792893 3.29289C0.98043 3.10536 1.23478 3 1.5 3Z" stroke="white"/>
+</g>
+<defs>
+<clipPath id="clip0_1_448">
+<rect width="15" height="15" fill="white" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
+</svg>
