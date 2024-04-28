@@ -1,12 +1,13 @@
-import 'dart:ffi';
+
 
 import 'package:figma_to_flutter/constant/app_style.dart';
 import 'package:figma_to_flutter/constant/colors_manager.dart';
-import 'package:figma_to_flutter/constant/size_manager.dart';
+
 import 'package:figma_to_flutter/constant/widget/widget.dart';
 import 'package:figma_to_flutter/date/provider.dart';
 import 'package:figma_to_flutter/screens/details.dart';
 import 'package:flutter/cupertino.dart';
+
 
 
 import 'package:flutter/material.dart';
@@ -47,18 +48,20 @@ class TeacherProfile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                    const  Text('Very good ..',style: AppStyle.veryGoodTextStyle,),
+                      const  FittedBox(child:   Text('Very good ..',style: AppStyle.veryGoodTextStyle,)),
                       SizedBox(height: 10.h,),
-                     const  Text(
-                        'static const addCardTextStyle',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.w400,
-                          height: 0,
+                      const  FittedBox(
+                       child:  Text(
+                          'static const addCardTextStyle',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w400,
+                            height: 0,
+                          ),
                         ),
-                      ),
+                     ),
                     ],
                   ),
                 )

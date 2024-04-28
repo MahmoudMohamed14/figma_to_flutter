@@ -3,6 +3,7 @@ import 'package:figma_to_flutter/constant/colors_manager.dart';
 import 'package:figma_to_flutter/constant/widget/widget.dart';
 import 'package:figma_to_flutter/date/provider.dart';
 import 'package:figma_to_flutter/screens/teatcherProfile.dart';
+import 'package:flutter/cupertino.dart';
 
 
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ class SubjectSelection extends StatelessWidget {
         children: [
           Container(
             width: double.infinity,
-            height: 140.h,
+            height: 160.h,
             decoration: ShapeDecoration(
               color: MyColors.blue,
               shape: RoundedRectangleBorder(
@@ -44,41 +45,45 @@ class SubjectSelection extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Text.rich(
-                        TextSpan(
-                          children: [
-                            TextSpan(
-                              text: 'Welcome ',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 24,
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.w400,
-                                height: 0,
+                      const FittedBox(
+                        child:  Text.rich(
+                          TextSpan(
+                            children: [
+                              TextSpan(
+                                text: 'Welcome ',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 24,
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.w400,
+                                  height: 0,
+                                ),
                               ),
-                            ),
-                            TextSpan(
-                              text: 'Mohamed Ragab',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 24,
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.w800,
-                                height: 0,
+                              TextSpan(
+                                text: 'Mohamed Ragab',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 24,
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.w800,
+                                  height: 0,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                       SizedBox(height: 10.h,),
-                      const  Text(
-                        'Please choose your subjects',
-                        style: TextStyle(
-                          color: MyColors.white,
-                          fontSize: 20,
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.w400,
-                          height: 0,
+                    const  FittedBox(
+                        child:   Text(
+                          'Please choose your subjects',
+                          style: TextStyle(
+                            color: MyColors.white,
+                            fontSize: 20,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w400,
+                            height: 0,
+                          ),
                         ),
                       ),
                     ],
